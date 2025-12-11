@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Polcram Hub – OSINT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="sidebar">
+    <h2 class="logo">POLCRAM</h2>
+    <ul>
+        <li onclick="window.location.href='index.html'">🏠 Accueil</li>
+        <li class="active">🕵️ OSINT</li>
+        <li onclick="window.location.href='ip.html'">🌐 IP Intel</li>
+        <li onclick="window.location.href='domain.html'">🌍 Domain Intel</li>
+        <li onclick="window.location.href='website.html'">🔐 Website Intel</li>
+        <li onclick="window.location.href='score.html'">📊 OSINT Score</li>
+        <li onclick="window.location.href='metadata.html'">📄 Metadata OSINT</li>
+    </ul>
+</nav>
+
+<main class="content">
+    <h1>Username OSINT</h1>
+
+    <div class="card">
+        <label>Pseudo :</label>
+        <input id="username" placeholder="ex: polcram">
+
+        <button onclick="checkUsername()">Vérifier</button>
+
+        <div id="results"></div>
+    </div>
+
+    <p class="disclaimer">
+        Outil basé uniquement sur des profils publics.  
+        Usage légal et responsable uniquement.
+    </p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
