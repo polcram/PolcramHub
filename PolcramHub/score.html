@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Polcram Hub – OSINT Surface Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="sidebar">
+    <h2 class="logo">POLCRAM</h2>
+    <ul>
+        <li onclick="window.location.href='index.html'">🏠 Accueil</li>
+        <li onclick="window.location.href='osint.html'">🕵️ OSINT</li>
+        <li onclick="window.location.href='website.html'">🔐 Website Intel</li>
+        <li class="active">📊 OSINT Score</li>
+    </ul>
+</nav>
+
+<main class="content">
+    <h1>OSINT Surface Score 📊</h1>
+
+    <div class="card">
+        <label>Domaine ou URL :</label>
+        <input id="scoreSite" placeholder="ex: example.com">
+
+        <button onclick="calcScore()">Calculer le score</button>
+
+        <div id="scoreResults"></div>
+    </div>
+
+    <p class="disclaimer">
+        Score indicatif basé sur des signaux techniques publics.  
+        Aucun test d’intrusion, aucune conclusion de sécurité.
+    </p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

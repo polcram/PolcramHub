@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Polcram Hub – Website Intel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="sidebar">
+    <h2 class="logo">POLCRAM</h2>
+    <ul>
+        <li onclick="window.location.href='index.html'">🏠 Accueil</li>
+        <li onclick="window.location.href='osint.html'">🕵️ OSINT</li>
+        <li class="active">🔐 Website Intel</li>
+    </ul>
+</nav>
+
+<main class="content">
+    <h1>Website Technology & Safety Intel</h1>
+
+    <div class="card">
+        <label>URL ou domaine :</label>
+        <input id="site" placeholder="ex: https://example.com">
+
+        <button onclick="analyzeWebsite()">Analyser</button>
+
+        <div id="siteResults"></div>
+    </div>
+
+    <p class="disclaimer">
+        Analyse passive basée sur des informations publiques.  
+        Aucun test d’intrusion, aucun scan de vulnérabilités.
+    </p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
